@@ -1,0 +1,8 @@
+name: for_container
+channels:
+  - bioconda
+dependencies:
+  - minimap2
+  - bedtools
+  - samtools
+  - coverm
