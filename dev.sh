@@ -1,7 +1,7 @@
 NAME=read_alignment
 DOCKER_IMAGE=quay.io/hallamlab/external_$NAME
 # DOCKER_IMAGE=quay.io/hallamlab/$NAME
-VER=0.1
+VER=0.2
 echo image: $DOCKER_IMAGE:$VER
 echo ""
 
@@ -36,7 +36,7 @@ case $1 in
     -t)
         cd test
 
-        cp ../example.sh ./test.sh        
+        # cp ../example.sh ./test.sh  
         docker run -it --rm \
             --mount type=bind,source="./",target="/ws" \
             --workdir="/ws" \
